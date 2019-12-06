@@ -1,0 +1,22 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "Examples of using plot from TypeScript",
+  "scripts": {
+    "start": "ts-node example-1.ts"
+  },
+  "keywords": [],
+  "author": "ashley@codecapers.com.au",
+  "license": "MIT",
+  "dependencies": {
+    "@plotex/render-image": "0.0.10",
+    "daki": "0.0.2",
+    "fs-extra": "^7.0.1",
+    "plot": "0.0.10"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.5",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  }
+}
