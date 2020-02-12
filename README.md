@@ -2,6 +2,8 @@
 
 This repository contains various examples of using [plot](https://www.npmjs.com/package/plot).
 
+## TypeScript / Node.js
+
 To use, clone the repo, then:
 
     cd typescript
@@ -18,4 +20,12 @@ There's plenty of other examples that you can run in this form:
 
 And so on...
 
+## React
 
+To try out the React example:
+
+    cd react
+    
+    npm install
+
+    npm start
