@@ -12,8 +12,12 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        const data = [ { A: 15 }, { A: 8 }, { A: 32 }, { A: 10 }, { A: 15 }, { A: 28 } ];
-        plot(data).renderDOM(this.chartRef.current)
+        // Data can be suppied in various formats.
+        //const data = [ 15, 8, 32, 10, 15, 28 ];
+        //const data = [ { A: 15 }, { A: 8 }, { A: 32 }, { A: 10 }, { A: 15 }, { A: 28 } ];
+        const data = { A: [15, 8, 32, 10, 15, 28 ] };
+        plot(data)
+            .renderDOM(this.chartRef.current)
             .then(chart => {
                 this.chart = chart;
             });
