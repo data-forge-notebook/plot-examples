@@ -6,17 +6,21 @@ This repository contains various examples of using [plot](https://www.npmjs.com/
 
 To use, clone the repo, then:
 
-    cd typescript
+```bash
+cd typescript
 
-    npm install
+npm install
 
-    npm start
+npm start
+```
 
 A chart will be rendered to the output directory.
 
 There's plenty of other examples that you can run in this form:
 
-    npx ts-node example-2.ts
+```bash
+npx ts-node example-2.ts
+```
 
 And so on...
 
@@ -24,8 +28,10 @@ And so on...
 
 To try out the React example:
 
-    cd react
-    
-    npm install
+```bash
+cd react
 
-    npm start
+npm install
+
+npm start
+```
