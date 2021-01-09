@@ -2,7 +2,7 @@
 // Example of rendering a line chart from real data.
 //
 
-import { plot } from "plot";
+import { ChartType, plot } from "plot";
 import "@plotex/render-image";
 import { readCsv } from "datakit";
 import * as fs from "fs-extra";
@@ -14,8 +14,17 @@ fs.emptyDirSync(outputPath);
 
 async function main(): Promise<void> {
 
-    const data = await readCsv("./STW.csv");
-    const plt = plot(data, {}, { x: "date", y: "close" });
+    let data = await readCsv("./STW.csv");
+    const bars = data.map((row: any) => ({
+        date: row.date,
+        candle: [
+            row.open,
+            row.high,
+            row.low,
+            row.close,
+        ],
+    }))
+    const plt = plot(bars, { chartType: "candlestick" }, { x: "date", y: "candle" });
     await plt.renderImage(path.join(outputPath, "image.png"), { openImage: false });
 }
 
