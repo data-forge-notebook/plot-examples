@@ -1,10 +1,13 @@
 # React example of Plot
 
-This example project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An example of using the Plot library with React.
+
+This is project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 To run:
 
-    cd browser
-    npm install
-    npm start
-
+```bash
+cd browser
+npm install
+npm start
+```
