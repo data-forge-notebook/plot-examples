@@ -9,10 +9,10 @@
   "author": "ashley@codecapers.com.au",
   "license": "MIT",
   "dependencies": {
-    "@plotex/render-image": "1.0.4",
+    "@plotex/render-image": "1.0.8",
     "datakit": "1.0.3",
     "fs-extra": "^7.0.1",
-    "plot": "1.0.6"
+    "plot": "1.0.8"
   },
   "devDependencies": {
     "@types/fs-extra": "^5.0.5",
