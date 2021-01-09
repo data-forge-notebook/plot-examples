@@ -2,7 +2,7 @@
 // Example of rendering a line chart from real data.
 //
 
-import { ChartType, plot } from "plot";
+import { plot } from "plot";
 import "@plotex/render-image";
 import { readCsv } from "datakit";
 import * as fs from "fs-extra";
