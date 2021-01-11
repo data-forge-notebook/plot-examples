@@ -14,8 +14,7 @@ import * as fs from "fs-extra";
 import * as path from "path";
 
 const outputName = path.basename(__filename, ".ts");
-const outputPath = path.join("./output", outputName);
-fs.emptyDirSync(outputPath);
+const outputPath = path.join("./output");
 
 async function main(): Promise<void> {
     const plt = plot({
@@ -86,7 +85,7 @@ async function main(): Promise<void> {
             },
         }
     );
-    await plt.renderImage(path.join(outputPath, "image.png"), { openImage: false });
+    await plt.renderImage(path.join(outputPath, outputName + ".png"), { openImage: false });
 }
 
 main()

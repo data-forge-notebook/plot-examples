@@ -13,8 +13,7 @@ import * as fs from "fs-extra";
 import * as path from "path";
 
 const outputName = path.basename(__filename, ".ts");
-const outputPath = path.join("./output", outputName);
-fs.emptyDirSync(outputPath);
+const outputPath = path.join("./output");
 
 async function main(): Promise<void> {
     const plt = plot({ versicolor_x, versicolor_y })
@@ -23,7 +22,8 @@ async function main(): Promise<void> {
             .setSeries("versicolor_x")
         .y()
             .addSeries("versicolor_y");
-    await plt.renderImage(path.join(outputPath, "image.png"), { openImage: false });
+
+    await plt.renderImage(path.join(outputPath, outputName + ".png"), { openImage: false });
 }
 
 main()
