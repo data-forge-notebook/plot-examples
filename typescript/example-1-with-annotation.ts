@@ -18,18 +18,20 @@ const outputPath = path.join("./output");
 
 async function main(): Promise<void> {
     const plt = plot(
-        { 
-            data1: {
-                values: data1,
-                annotations: [
+        {
+            values: {
+                data1,
+                data2
+            },
+            annotations: {
+                data1: [
                     {
                         value: 200,
                         text: "A good value",
                         style: "annotation1",
-                    }                    
-                ]
-            }, 
-            data2: data2,
+                    },
+                ],
+            },
         },
         {
             annotations: {
