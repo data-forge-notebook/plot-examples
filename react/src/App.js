@@ -28,7 +28,11 @@ class App extends React.Component {
                 ],
             },
         };
+
         const config = {
+            title: {
+                text: "The best chart!",
+            },
             annotations: {
                 red: {
                     lineColor: "red",
@@ -39,7 +43,7 @@ class App extends React.Component {
                     },
                 },
             },
-        }
+        };
 
         plot(data, config)
             .renderDOM(this.chartRef.current)
